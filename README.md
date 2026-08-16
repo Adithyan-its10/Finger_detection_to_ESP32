@@ -1,6 +1,6 @@
 # Real-Time Finger Detection & IoT Display System
 
-This is an interactive fun sorta project that I've made to mess around with computer vision and esp32. It tracks hand gestures and counts raised fingers using a computer vision Python script, transmits the data in real-time via **UDP packets over Wi-Fi**, and displays the live count on a hardware **ESP32 microcontroller** connected to an **SSD1306 OLED screen**.
+This is an interactive fun sorta project that I've made to mess around with computer vision and ESP32 microcontroller. It tracks hand gestures and counts raised fingers using a computer vision Python script, transmits the data in real-time via **UDP packets over Wi-Fi**, and displays the live count on a hardware **ESP32 microcontroller** connected to an **SSD1306 OLED screen**.
 
 ---
 
