@@ -5,9 +5,9 @@ import socket
 cap =cv2.VideoCapture(0)
 det = HandDetector(detectionCon=0.8, maxHands=1)
 
-##esp32_ip = ""
-##port = 5005
-##sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+esp32_ip = "enter ip address of esp32 here"
+port = 5005
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 while True:
     success, img = cap.read()
@@ -18,7 +18,7 @@ while True:
         fingers = det.fingersUp(hands1)
         count = sum(fingers)
 
-        ##sock.sendto(str(count).encode(), (esp32_ip, port))
+        sock.sendto(str(count).encode(), (esp32_ip, port))
 
         cv2.putText(img, f'Fingers: {count}', (50,50), cv2.FONT_HERSHEY_PLAIN, 3, (0, 255, 0), 3)
 
